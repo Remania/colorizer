@@ -13,6 +13,7 @@
 .color__item {
   width: 100%;
   height: 10rem;
+  position: relative;
 }
 .color__box {
   height: 100%;
@@ -20,7 +21,32 @@
   border-radius: 8px;
   transition: var(--soft-transition);
 }
-.color__box:hover {
-  transform: scale(.95);
-  filter: brightness(95%);
+.delete-color-btn {
+  cursor: pointer;
+  border: thin solid var(--dark);
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  padding: 0.25rem 0.5rem;
+  margin: 1rem;
+  color: var(--dark);
+  background-color: var(--light);
+  transition: var(--soft-transition);
+}
+.delete-color-btn:hover {
+  color: var(--light);
+  background-color: var(--dark);
+}
+.no-colors {
+  padding: 1rem;
+  margin: 1rem;
+  width: 15rem;
+  border-radius: 8px;
+  color: var(--light);
+  background-color: var(--dark);
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
 }

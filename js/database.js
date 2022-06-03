@@ -12,6 +12,22 @@ const getAllColors = async () => {
   }
 };
 
+const deleteColor = async (id) => {
+  try {
+    db.colors.delete(id)
+  } catch (error) {
+    (e) => console.log("Error: " + (e.stack || e));
+  }
+}
+
+const deleteAllColors = async () => {
+  try {
+    db.colors.clear()
+  } catch (error) {
+    (e) => console.log("Error: " + (e.stack || e));
+  }
+}
+
 const createColor = async (color) => {
   try {
     await db.colors.add({ color: `${color}` });
@@ -23,4 +39,4 @@ const createColor = async (color) => {
   }
 };
 
-export { getAllColors, createColor };
+export { getAllColors, createColor, deleteColor, deleteAllColors };

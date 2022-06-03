@@ -6,6 +6,8 @@
   width: 100%;
   height: var(--sidebar-height);
   color: var(--light);
+  position: relative;
+  z-index: 100;
 }
 .App__sidebar > * {
   color: inherit;
