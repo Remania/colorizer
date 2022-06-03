@@ -1,0 +1,40 @@
+.App__header {
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  padding: 0 5rem;
+}
+.App__logo-container {
+  display: flex;
+  align-items: center;
+}
+.App__menu-container {
+  background-color: var(--light);
+  border-radius: 8px;
+  display: none;
+}
+.App__logo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to top,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  margin-right: 0.5rem;
+}
+.App__title {
+  font-weight: lighter;
+}

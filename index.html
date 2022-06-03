@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorizer</title>
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="/css/globals.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+        integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="App" id="App" data-theme="light">
+        <header class="App__header">
+            <div class="App__logo-container">
+                <div class="App__logo"></div>
+                <h1 class="App__title">Colorizer</h1>
+            </div>
+            <div class="App__menu-container">
+                <button class="hamburger hamburger--elastic" id="menu-btn" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </header>
+        <main class="App__main">
+            <aside class="App__sidebar">
+                <form action="" class="color__form" id="color__form">
+                    <input type="color" name="color" class="input" id="color">
+                    <button type="submit" class="btn create_color" id="create_color_btn">Crear color</button>
+                </form>
+                <button type="button" class="App__theme-container btn" id="toggle-theme-btn">Dark Theme</button>
+                <footer class="App__footer">
+                    <p>&copy; <span id="current-year"></span> <a href="https://github.com/Remania"
+                            target="_blank">Remania</a></p>
+                </footer>
+            </aside>
+            <ul class="colors__list" id="colors__list"></ul>
+        </main>
+    </div>
+
+    <script src="/js/database.js" type="module"></script>
+    <script src="/js/index.js" type="module"></script>
+</body>
+
+</html>

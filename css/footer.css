@@ -1,0 +1,8 @@
+.App__footer {
+  color: var(--primary);
+  font-size: large;
+}
+.App__footer a {
+  color: inherit;
+  font-weight: bolder;
+}

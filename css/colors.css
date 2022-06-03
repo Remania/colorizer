@@ -1,0 +1,26 @@
+.colors__list {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+  padding: 0 1rem;
+  margin: 1rem 0 0 1rem;
+  gap: 1rem;
+  height: calc(var(--sidebar-height) - 3rem);
+  overflow-y: scroll;
+}
+.color__item {
+  width: 100%;
+  height: 10rem;
+}
+.color__box {
+  height: 100%;
+  border: thin solid gainsboro;
+  border-radius: 8px;
+  transition: var(--soft-transition);
+}
+.color__box:hover {
+  transform: scale(.95);
+  filter: brightness(95%);
+}

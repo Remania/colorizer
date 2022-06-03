@@ -1,0 +1,23 @@
+.App__sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: var(--sidebar-height);
+  color: var(--light);
+}
+.App__sidebar > * {
+  color: inherit;
+}
+.color__form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+[data-theme="dark"] .color__form *,
+[data-theme="dark"] .App__theme-container {
+  border-color: var(--light);
+  color: var(--light);
+}
