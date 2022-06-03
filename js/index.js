@@ -97,7 +97,7 @@ color__form.addEventListener("submit", () => {
   createColor(color.value);
 });
 
-delete_all_colors_btn.addEventListener("click", () => {
+/* delete_all_colors_btn.addEventListener("click", () => {
   deleteAllColors();
   document.location.reload();
-});
+}); */
